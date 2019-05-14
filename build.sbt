@@ -4,7 +4,7 @@ version := "0.1"
 
 scalaVersion := "2.12.8"
 
-libraryDependencies += "io.prestosql" % "presto-spi" % "310" % "provided"
+libraryDependencies +=  "com.facebook.presto" % "presto-spi" % "0.219" % "provided"
 
 lazy val myProject = (project in file(".")).
   settings(

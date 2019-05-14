@@ -16,7 +16,7 @@ then
         fi
 fi
 
-sudo mkdir -p /usr/lib/presto/plugin/prestoqueryeventlistener
+sudo mkdir -p /usr/lib/presto/plugin/queryeventlistener
 sudo /usr/bin/aws s3 cp s3://${bucket_name}/PrestoQueryEventListener.jar /tmp
 sudo cp /tmp/PrestoQueryEventListener.jar /usr/lib/presto/plugin/queryeventlistener/
 
