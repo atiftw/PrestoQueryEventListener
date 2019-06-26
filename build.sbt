@@ -4,7 +4,10 @@ version := "0.1"
 
 scalaVersion := "2.12.8"
 
-libraryDependencies +=  "com.facebook.presto" % "presto-spi" % "0.219" % "provided"
+libraryDependencies ++=  Seq(
+  "com.facebook.presto" % "presto-spi" % "0.219" % "provided",
+  "com.fasterxml.jackson.module" % "jackson-module-scala_2.12" % "2.9.8",
+)
 
 lazy val myProject = (project in file(".")).
   settings(
